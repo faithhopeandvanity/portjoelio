@@ -5,22 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Joe Collar// Web Dev</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Joe - Junior Web Dev</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Joe Collar</h1>
-    <nav>
-    </nav>
+    <h1>Joe - Junior Web Dev</h1>
+    <div class="navbar">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="wrapper">
+      <img class=img-selfie src=img/selfie.jpg alt="joe collar selfie"
+    </div>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Your next web dev!</h2>
+      <h2>I'm Joe - your next web dev!</h2>
     </div>
   </section>
 
@@ -28,18 +35,66 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>Who am I?</h2>
+      <p>My name is Joe. I was born in 2000 and grew up in London, but like most of Gen Z, I also grew up on the Internet. I live for the arts and in my free time I love to read and go to the theatre. I currently specialise in front-end web development, but am constantly looking to add more strings to my bow.</p>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
+      <div style="text-align: center;">
       <h2>Work</h2>
+      <img class="boardroom" src=img/boardroom.jpg id="joe boardroom">
+    <div>
+      <p class="boardroom-copy" id="boardroom-copy">My most recent project - as you can see, we're in the boardroom, and my colleague Mark is giving a presentation on SEO strategy. We were contracted by a major book publishing house to improve their SEO strategy.</p>
+    </div>
+    <section class="page-section-2" id="work2">
+      <img class="man-typing" src="img/mantyping.jpg" id="man-typing">
+      <div>
+        <p class="man-typing-copy" id="man-typing-copy">Hard at work, typing away... Obviously, these are just placeholder images as I'm a beginner, but soon you'll see them replaced by pictures of my real projects.</p>
+      </div>
     </section>
+  </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <div class="page-section contact" id="contact">
+      <div style="text-align: center;">
       <h2>Reach out (I'll be there...)</h2>
-    </section>
+      <img class="handraise" src=img/woman-raising-hand.png alt= "woman raising hand">
+      <p>So... you want to work with me, it seems. The feeling's mutual - you can get in touch with me using the following links:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="uk">UK</option>
+            <option value="us">US</option>
+            <option value="eu">EU</option>
+            <option value="restofworld">Rest of the World</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+
   </main>
+  <div class="footer">
+    <a href="https://www.linkedin.com/in/joefhv">LinkedIn</a>
+    <a href="https://faithhopeandvanity.com/">Bits and bobs</a>
+    <h3>All products made with four ingredients; HTML, CSS, JavaScript and ❤️</h3>
+    <p>
+      All rights reserved, &#169; 2023.
+    </p>
+  </div>
 </body>
 
 </html>
